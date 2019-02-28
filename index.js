@@ -97,3 +97,14 @@ $("#2").hover(function(){
     $("on-scale").hide();
 });
 // });
+
+function showContent(type) {
+    $(".poduct").hide().filter('.' + type).show();
+  }
+
+  $('.side-menu').on('click', '.fa fa-angle-right', function(e) {
+    showContent(e.currentTarget.hash.slice(1));
+    e.preventDefault();
+  }); 
+  showContent('Books');
+  showContent('Albums');
