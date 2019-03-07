@@ -82,6 +82,8 @@ $('#book3 .picture').attr("src",book3.pictureURL);
 $('.product-bottom6 .price').text(book3.price);
 // end of variables and objects
 
+var Albums = ["album1","album2","album3"];
+var Books = ["book1","book2","book3"];
 
 // add Function
 function add_to_page (add){
@@ -101,7 +103,7 @@ $("#2").hover(function(){
     $("New-products").show();
     $("on-scale").hide();
 });
-// });
+// // });
 
 function showContent(type) {
     $(".poduct").hide().filter('.' + type).show();
@@ -113,3 +115,7 @@ function showContent(type) {
   }); 
   showContent('Books');
   showContent('Albums');
+ 
+  
+
+  
