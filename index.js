@@ -103,7 +103,7 @@ $("#2").hover(function(){
     $("New-products").show();
     $("on-scale").hide();
 });
-// // });
+// });
 
 function showContent(type) {
     $(".poduct").hide().filter('.' + type).show();
