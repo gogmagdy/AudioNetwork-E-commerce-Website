@@ -11,7 +11,7 @@ function closemenu(){
 }
 // End of Menu bar 
 
-
+// variables and objects
 var album1 = {
     name : 'The Crumbling' ,
     category :  'pop music',
@@ -80,8 +80,10 @@ $('.product-bottom6 .name').text(book3.name);
 $('.product-bottom6 .category').text(book3.category);
 $('#book3 .picture').attr("src",book3.pictureURL);
 $('.product-bottom6 .price').text(book3.price);
+// end of variables and objects
 
 
+// add Function
 function add_to_page (add){
     $('.New-products').append($('<div class="product-top">'+'<div id="add">').html( $('<img div class=picture>').attr("src",add.pictureURL).css({"width":"35%","padding-left":"120px"})))
     $('.New-products').append($('<div class="product-bottom">').html($('<div class="name">').text(add.name).css("padding-left","200px")))
@@ -89,7 +91,10 @@ function add_to_page (add){
     $('.New-products').append($('<div class="product-bottom">').html($('<div class="price">').text(add.price).css("padding-left","270px")))
     return add ;
 }
-// console.log(add_to_page(add));
+// console.log(add_to_page(book1));
+// end of add Function
+
+
 // $(document).ready(function()
 // {
 $("#2").hover(function(){
